@@ -1,3 +1,68 @@
+/* Styling untuk Halaman Layanan */
+.service-section {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.service-section h2 {
+    font-size: 2em;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.service-section p {
+    font-size: 1.1em;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: calc(33% - 20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
 /* Reset styling untuk konsistensi */
 * {
     margin: 0;
